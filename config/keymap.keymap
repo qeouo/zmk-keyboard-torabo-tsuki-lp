@@ -23,10 +23,8 @@
         require-prior-idle-ms = <200>;
         excluded-positions = <54 55 56 58 33 34 35 36 >;
     };
-        pointing_device_split: pointing_device_split@0 {
+        pointing_device_split: pointing_device_split {
             compatible = "zmk,input-split";
-            reg = <0>;
-            device = <&pointing_device>;
         };
 
  keymap {
