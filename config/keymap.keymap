@@ -15,7 +15,12 @@
     hold-while-undecided;
     flavor = "hold-preferred";
 };
-
+/ {
+    trackball_listener:trackball_listener {
+        status = "okay";
+        compatible = "zmk,input-listener";
+    };
+};
 / {
 
 
@@ -27,10 +32,6 @@
     };
 
 
-    trackball_listener:trackball_listener {
-        compatible = "zmk,input-listener";
-
-    };
 
     combos {
         compatible = "zmk,combos";
