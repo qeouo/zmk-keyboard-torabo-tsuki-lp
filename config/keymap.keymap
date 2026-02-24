@@ -20,11 +20,7 @@
     /omit-if-no-ref/
 
 
-    pointing_listener: pointing_listener {
-        compatible = "zmk,input-listener";
-        device = <&trackball>;
-     
-    };
+
  keymap {
         compatible = "zmk,keymap";
 
