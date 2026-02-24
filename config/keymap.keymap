@@ -17,12 +17,7 @@
 };
 
 / {
-    zip_temp_layer: zip_temp_layer {
-        compatible = "zmk,input-processor-temp-layer";
-        #input-processor-cells = <2>;
-        require-prior-idle-ms = <200>;
-        excluded-positions = <54 55 56 58 33 34 35 36 >;
-    };
+
 
     trackball_listener: trackball_listener {
         compatible = "zmk,input-listener";
