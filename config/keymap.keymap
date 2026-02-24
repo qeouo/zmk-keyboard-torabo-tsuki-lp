@@ -23,8 +23,10 @@
         require-prior-idle-ms = <200>;
         excluded-positions = <54 55 56 58 33 34 35 36 >;
     };
-pointing_listener: pointing_listener {
-}
+    pointing_listener: pointing_listener {
+        compatible = "zmk,input-listener";
+        status = "disabled";
+    };
 
  keymap {
         compatible = "zmk,keymap";
