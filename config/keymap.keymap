@@ -26,8 +26,11 @@
         excluded-positions = <54 55 56 58 33 34 35 36 >;
     };
 
-    trackball_listener: trackball_listener {
+
+    trackball_listener {
         compatible = "zmk,input-listener";
+        device = <&trackball>;
+
     };
 
     combos {
