@@ -24,7 +24,7 @@
         excluded-positions = <54 55 56 58 33 34 35 36 >;
     };
 
- pointing_listener: pointing_listener {
+ pointing_listenera: pointing_listenera {
         compatible = "zmk,input-listener";
 }
  keymap {
