@@ -15,7 +15,9 @@
     hold-while-undecided;
     flavor = "hold-preferred";
 };
-
+ &pointing_listener {
+        compatible = "zmk,input-listener";
+}
 / {
     zip_temp_layer: zip_temp_layer {
         compatible = "zmk,input-processor-temp-layer";
@@ -24,9 +26,7 @@
         excluded-positions = <54 55 56 58 33 34 35 36 >;
     };
 
- pointing_listenera: pointing_listenera {
-        compatible = "zmk,input-listener";
-}
+
  keymap {
         compatible = "zmk,keymap";
 
