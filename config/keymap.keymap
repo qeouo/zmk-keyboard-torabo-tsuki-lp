@@ -25,7 +25,7 @@
     };
     pointing_listener: pointing_listener {
         compatible = "zmk,input-listener";
-        device = <&pointing_device>;
+        device = <&trackball>;
         input-processors =
             <&zip_temp_layer MOUSE 100000>,
             <&zip_xy_scaler 8 16>,
