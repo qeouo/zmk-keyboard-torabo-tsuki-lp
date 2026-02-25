@@ -23,6 +23,7 @@
         require-prior-idle-ms = <200>;
         excluded-positions = <54 55 56 57 58 33 34 35 36 >;
     };
+
     pointing_listener: pointing_listener {
         compatible = "zmk,input-listener";
         input-processors =
@@ -42,7 +43,6 @@
         };
     };
 
-   
     macros {
         exit_AML: exit_AML {
             compatible = "zmk,behavior-macro";
@@ -131,8 +131,8 @@
             quick-tap-ms = <200>;
             hold-while-undecided;
         };
-
     };
+
     combos {
         compatible = "zmk,combos";
 
@@ -142,7 +142,7 @@
         };
     };
 
- keymap {
+    keymap {
         compatible = "zmk,keymap";
 
         layer_0 {
@@ -167,11 +167,11 @@
 
         cursor {
             bindings = <
-&trans  &trans            &trans        &trans             &trans         &trans                  &trans               &trans     &trans         &trans            &trans                   &trans
-&trans  &kp NUMBER_1      &kp NUMBER_2  &kp NUMBER_3       &kp NUMBER_4   &kp N5                  &kp NUMBER_6         &kp N7     &kp N8         &kp N9            &zero_underbar           &trans
-&trans  &kp LEFT_BRACKET  &kp MINUS     &kp RIGHT_BRACKET  &kp BACKSLASH  &kp F2  &trans  &trans  &kp LEFT             &kp DOWN   &kp UP_ARROW   &kp RIGHT         &kp ENTER                &trans
-&trans  &trans            &trans        &trans             &trans         &trans  &trans  &trans  &kp INTERNATIONAL_3  &kp EQUAL  &kp SEMICOLON  &kp SINGLE_QUOTE  &kp RS(INTERNATIONAL_1)  &trans
-&trans  &trans            &trans        &trans             &mo 5          &trans  &trans  &trans  &trans               &trans     &trans         &trans            &trans                   &trans
+&trans  &trans            &trans        &trans             &trans         &trans                  &trans               &trans     &trans         &trans            &trans               &trans
+&trans  &kp NUMBER_1      &kp NUMBER_2  &kp NUMBER_3       &kp NUMBER_4   &kp N5                  &kp NUMBER_6         &kp N7     &kp N8         &kp N9            &kp N0               &trans
+&trans  &kp LEFT_BRACKET  &kp MINUS     &kp RIGHT_BRACKET  &kp BACKSLASH  &kp F2  &trans  &trans  &kp LEFT             &kp DOWN   &kp UP_ARROW   &kp RIGHT         &kp ENTER            &trans
+&trans  &trans            &trans        &trans             &trans         &trans  &trans  &trans  &kp INTERNATIONAL_3  &kp EQUAL  &kp SEMICOLON  &kp SINGLE_QUOTE  &kp INTERNATIONAL_1  &trans
+&trans  &trans            &trans        &trans             &mo 5          &trans  &trans  &trans  &trans               &trans     &trans         &trans            &trans               &trans
             >;
         };
 
