@@ -43,7 +43,51 @@
     };
 
    
+    behaviors {
+    
 
+        ctrl_d: ctrl_d {
+            compatible = "zmk,behavior-mod-morph";
+            label = "CTRL_D";
+            bindings = <&kp D>, <&kp TAB>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL)>;
+            keep-mods = <(MOD_LCTL)>;
+        };
+
+        zero_underbar: zero_underbar {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ZERO_UNDERBAR";
+            bindings = <&kp N0>, <&kp INT_RO>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+            keep-mods = <(MOD_LSFT)>;
+        };
+
+        esc_tab: esc_tab {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ESC_TAB";
+            bindings = <&kp ESCAPE>, <&kp TAB>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL)>;
+            keep-mods = <(MOD_LCTL)>;
+        };
+
+        mo_exit_aml_on_tap: mo_exit_aml_on_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MO_EXIT_AML_ON_TAP";
+            bindings = <&mo>, <&kp_exit_AML>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "hold-preferred";
+            quick-tap-ms = <200>;
+            hold-while-undecided;
+        };
+    };
     combos {
         compatible = "zmk,combos";
 
