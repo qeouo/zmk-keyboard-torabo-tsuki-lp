@@ -43,6 +43,14 @@
     };
 
     macros {
+        exit_AML: exit_AML {
+            compatible = "zmk,behavior-macro";
+            wait-ms = <0>;
+            tap-ms = <0>;
+            #binding-cells = <0>;
+            bindings = <&tog_off MOUSE>;
+            label = "exit_AML";
+        };
 
         btchange: btchange {
             compatible = "zmk,behavior-macro-one-param";
