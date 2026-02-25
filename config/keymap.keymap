@@ -30,6 +30,16 @@
             <&zip_xy_scaler 8 16>,
             <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>;
 
+        scroller {
+            layers = <2>;
+            input-processors =
+                <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT)>,
+                <&zip_xy_scaler 1 24>,
+                <&zip_x_scaler 0 16>,
+                <&zip_xy_to_scroll_mapper>;
+
+            process-next;
+        };
     };
 
  keymap {
