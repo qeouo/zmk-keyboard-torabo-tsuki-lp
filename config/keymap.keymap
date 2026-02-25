@@ -190,7 +190,7 @@
 &trans  &trans      &trans          &trans          &trans  &trans                        &trans        &trans       &trans       &trans       &trans       &trans
 &trans  &kp F1      &kp F2          &kp F3          &kp F4  &kp F5                        &kp F6        &kp F7       &kp F8       &kp F9       &kp F10      &trans
 &trans  &kp GRAVE   &kp SCROLLLOCK  &kp KP_NUMLOCK  &trans  &trans  &trans  &trans        &kp F11       &kp F12      &trans       &trans       &trans       &trans
-&trans  &kp INS     &kp KP_NUMLOCK  &kp CAPSLOCK    &trans  &trans  &trans  &bt BT_CLR    &btchange 0   &btchange 1  &btchange 2  &btchange 3  &btchange 4  &trans
+&trans  &kp INS     &kp KP_NUMLOCK  &kp CAPSLOCK    &trans  &trans  &trans  &bt BT_CLR    &out OUT_USB  &btchange 0  &btchange 1  &btchange 2  &btchange 3  &trans
 &trans  &sys_reset  &trans          &trans          &trans  &trans  &trans  &out OUT_USB  &out OUT_BLE  &trans       &trans       &trans       &sys_reset   &trans
             >;
         };
