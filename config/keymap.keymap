@@ -76,17 +76,7 @@
             keep-mods = <(MOD_LCTL)>;
         };
 
-        mo_exit_aml_on_tap: mo_exit_aml_on_tap {
-            compatible = "zmk,behavior-hold-tap";
-            label = "MO_EXIT_AML_ON_TAP";
-            bindings = <&mo>, <&kp_exit_AML>;
 
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "hold-preferred";
-            quick-tap-ms = <200>;
-            hold-while-undecided;
-        };
     };
     combos {
         compatible = "zmk,combos";
