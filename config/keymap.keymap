@@ -42,23 +42,78 @@
         };
     };
 
-    macros {
-        exit_AML: exit_AML {
-            compatible = "zmk,behavior-macro";
-            wait-ms = <0>;
-            tap-ms = <0>;
-            #binding-cells = <0>;
-            bindings = <&tog_off MOUSE>;
-            label = "exit_AML";
+    behaviors {
+        tog_off: toggle_layer_off {
+            compatible = "zmk,behavior-toggle-layer";
+            #binding-cells = <1>;
+            display-name = "Toggle Layer Off";
+            toggle-mode = "off";
         };
 
-        btchange: btchange {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings = <&out OUT_BLE &macro_param_1to2 &bt BT_SEL MACRO_PLACEHOLDER>;
-            label = "BTCHANGE";
+        mt_exit_AML_on_tap: mt_exit_AML_on_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MT_exit_AML_ON_TAP";
+            bindings = <&kp>, <&kp_exit_AML>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "hold-preferred";
+            quick-tap-ms = <200>;
+            hold-while-undecided;
+        };
+
+        ctrl_d: ctrl_d {
+            compatible = "zmk,behavior-mod-morph";
+            label = "CTRL_D";
+            bindings = <&kp D>, <&kp TAB>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL)>;
+            keep-mods = <(MOD_LCTL)>;
+        };
+
+        zero_underbar: zero_underbar {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ZERO_UNDERBAR";
+            bindings = <&kp N0>, <&kp INT_RO>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+            keep-mods = <(MOD_LSFT)>;
+        };
+
+        esc_tab: esc_tab {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ESC_TAB";
+            bindings = <&kp ESCAPE>, <&kp TAB>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL)>;
+            keep-mods = <(MOD_LCTL)>;
+        };
+
+        mo_exit_aml_on_tap: mo_exit_aml_on_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MO_EXIT_AML_ON_TAP";
+            bindings = <&mo>, <&kp_exit_AML>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "hold-preferred";
+            quick-tap-ms = <200>;
+            hold-while-undecided;
         };
     };
+
+    combos {
+        compatible = "zmk,combos";
+
+        aaaaa {
+            bindings = <&none>;
+            key-positions = <58 33 34 35 36 54 53>;
+        };
+    };
+
  keymap {
         compatible = "zmk,keymap";
 
