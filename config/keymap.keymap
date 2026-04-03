@@ -35,6 +35,7 @@
             layers = <2>;
             input-processors =
                 <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT)>,
+                <&zip_xy_scaler 8 16>,
                 <&zip_x_scaler 0 16>,
                 <&zip_xy_to_scroll_mapper>;
 
