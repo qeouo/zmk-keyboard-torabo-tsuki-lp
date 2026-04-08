@@ -166,11 +166,11 @@
 
         cursor {
             bindings = <
-&trans  &trans               &trans            &trans             &trans         &trans                  &trans      &trans         &trans         &trans            &trans               &trans
-&trans  &kp NUMBER_1         &kp NUMBER_2      &kp NUMBER_3       &kp NUMBER_4   &kp N5                  &kp HOME    &kp PAGE_DOWN  &kp PAGE_UP    &kp END           &kp BACKSPACE        &trans
-&trans  &kp NUMBER_6         &kp N7            &kp N8             &kp N9         &kp N0  &trans  &trans  &kp LEFT    &kp DOWN       &kp UP_ARROW   &kp RIGHT         &kp ENTER            &trans
-&trans  &kp INTERNATIONAL_3  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH  &trans  &trans  &trans  &kp DELETE  &kp EQUAL      &kp SEMICOLON  &kp SINGLE_QUOTE  &kp INTERNATIONAL_1  &trans
-&trans  &trans               &trans            &trans             &mo 5          &trans  &trans  &trans  &trans      &trans         &trans         &trans            &trans               &trans
+&trans  &trans               &trans            &trans             &trans         &trans                      &trans      &trans         &trans         &trans            &trans               &trans
+&trans  &kp NUMBER_1         &kp NUMBER_2      &kp NUMBER_3       &kp NUMBER_4   &kp N5                      &kp HOME    &kp PAGE_DOWN  &kp PAGE_UP    &kp END           &kp BACKSPACE        &trans
+&trans  &kp NUMBER_6         &kp N7            &kp N8             &kp N9         &kp N0      &trans  &trans  &kp LEFT    &kp DOWN       &kp UP_ARROW   &kp RIGHT         &kp ENTER            &trans
+&trans  &kp INTERNATIONAL_3  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH  &kp KP_DOT  &trans  &trans  &kp DELETE  &kp EQUAL      &kp SEMICOLON  &kp SINGLE_QUOTE  &kp INTERNATIONAL_1  &trans
+&trans  &trans               &trans            &trans             &lt 5 TAB      &trans      &trans  &trans  &kp LEFT    &trans         &trans         &trans            &trans               &trans
             >;
         };
 
@@ -186,21 +186,21 @@
 
         setting {
             bindings = <
-&trans  &trans      &trans          &trans          &trans  &trans                        &trans        &trans       &trans       &trans       &trans       &trans
-&trans  &kp F1      &kp F2          &kp F3          &kp F4  &kp F5                        &kp F6        &kp F7       &kp F8       &kp F9       &kp F10      &trans
-&trans  &kp GRAVE   &kp SCROLLLOCK  &kp KP_NUMLOCK  &trans  &trans  &trans  &trans        &kp F11       &kp F12      &trans       &trans       &trans       &trans
-&trans  &kp INS     &kp KP_NUMLOCK  &kp CAPSLOCK    &trans  &trans  &trans  &out OUT_USB  &btchange 0   &btchange 1  &btchange 2  &btchange 3  &btchange 4  &trans
-&trans  &sys_reset  &trans          &trans          &trans  &trans  &trans  &bt BT_CLR    &out OUT_BLE  &trans       &trans       &trans       &sys_reset   &trans
+&trans  &trans      &trans   &trans  &trans  &trans                         &trans        &trans          &trans          &trans        &trans       &trans
+&trans  &kp F1      &kp F2   &kp F3  &kp F4  &kp F5                         &kp GRAVE     &kp SCROLLLOCK  &kp KP_NUMLOCK  &kp CAPSLOCK  &kp INS      &trans
+&trans  &kp F6      &kp F7   &kp F8  &kp F9  &kp F10  &trans  &trans        &trans        &trans          &trans          &trans        &bt BT_CLR   &trans
+&trans  &kp F11     &kp F12  &trans  &trans  &trans   &trans  &out OUT_USB  &btchange 0   &btchange 1     &btchange 2     &btchange 3   &btchange 4  &trans
+&trans  &sys_reset  &trans   &trans  &trans  &trans   &trans  &bt BT_CLR    &out OUT_BLE  &trans          &trans          &trans        &sys_reset   &trans
             >;
         };
 
         layer_5 {
             bindings = <
-&trans  &trans     &trans                &trans     &trans     &trans                  &trans    &trans         &trans     &trans   &trans  &trans
-&trans  &trans     &trans                &trans     &trans     &trans                  &trans    &trans         &trans     &trans   &trans  &trans
-&trans  &kp LC(A)  &mt LEFT_SHIFT LC(S)  &kp TAB    &trans     &trans  &trans  &trans  &kp HOME  &kp PAGE_DOWN  &kp PG_UP  &kp END  &trans  &trans
-&trans  &kp LC(Z)  &kp LC(X)             &kp LC(C)  &kp LC(V)  &trans  &trans  &trans  &trans    &trans         &trans     &trans   &trans  &trans
-&trans  &trans     &trans                &trans     &trans     &trans  &trans  &trans  &trans    &trans         &trans     &trans   &trans  &trans
+&trans  &trans     &trans                &trans     &trans     &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &trans                &trans     &trans     &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LC(A)  &mt LEFT_SHIFT LC(S)  &kp TAB    &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LC(Z)  &kp LC(X)             &kp LC(C)  &kp LC(V)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &trans                &trans     &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
