@@ -48,7 +48,7 @@
             wait-ms = <0>;
             tap-ms = <0>;
             #binding-cells = <0>;
-            bindings = <&tog_off MOUSE>;
+            bindings = <&tog_off 1>;
             label = "exit_AML";
         };
 
@@ -153,11 +153,11 @@
 
         layer_0 {
             bindings = <
-&kp ESC               &kp N1                 &kp N2        &kp N3        &kp N4                                &kp N5                                                              &kp N6            &kp N7  &kp N8     &kp N9   &kp N0     &kp BSPC
-&esc_tab              &kp Q                  &kp W         &kp E         &kp R                                 &kp T                                                               &kp Y             &kp U   &kp I      &kp O    &kp P      &kp MINUS
-&mt LEFT_CONTROL TAB  &kp A                  &kp S         &ctrl_d       &kp F                                 &kp G      &mkp LCLK                              &mkp RCLK         &kp H             &kp J   &kp K      &kp L    &kp MINUS  &kp SINGLE_QUOTE
-&kp LSHFT             &kp Z                  &kp X         &kp C         &kp V                                 &kp B      &mo 2                                  &mo 4             &kp N             &kp M   &kp COMMA  &kp DOT  &kp SLASH  &kp INTERNATIONAL_1
-&mo 4                 &mt LEFT_SHIFT ESCAPE  &kp LEFT_GUI  &kp LEFT_ALT  &mt_exit_AML_on_tap LEFT_CONTROL TAB  &kp SPACE  &mt_exit_AML_on_tap RSHIFT LANGUAGE_2  &lt 4 LANGUAGE_1  &lt 2 LANGUAGE_1  &none   &none      &trans   &trans     &kp BACKSLASH
+&kp ESC               &kp N1                 &kp N2        &kp N3        &kp N4                                &kp N5                                                       &kp N6            &kp N7  &kp N8     &kp N9   &kp N0     &kp BSPC
+&esc_tab              &kp Q                  &kp W         &kp E         &kp R                                 &kp T                                                        &kp Y             &kp U   &kp I      &kp O    &kp P      &kp MINUS
+&mt LEFT_CONTROL TAB  &kp A                  &kp S         &ctrl_d       &kp F                                 &kp G      &mkp LCLK                              &mkp RCLK  &kp H             &kp J   &kp K      &kp L    &kp MINUS  &kp SINGLE_QUOTE
+&kp LSHFT             &kp Z                  &kp X         &kp C         &kp V                                 &kp B      &mo 2                                  &kp F11    &kp N             &kp M   &kp COMMA  &kp DOT  &kp SLASH  &kp INTERNATIONAL_1
+&mo 3                 &mt LEFT_SHIFT ESCAPE  &kp LEFT_GUI  &kp LEFT_ALT  &mt_exit_AML_on_tap LEFT_CONTROL TAB  &kp SPACE  &mt_exit_AML_on_tap RSHIFT LANGUAGE_2  &mo 3      &lt 2 LANGUAGE_1  &none   &none      &trans   &trans     &kp BACKSLASH
             >;
         };
 
@@ -177,17 +177,7 @@
 &trans  &kp NUMBER_1         &kp NUMBER_2      &kp NUMBER_3       &kp NUMBER_4   &kp N5                      &kp HOME    &kp PAGE_DOWN  &kp PAGE_UP    &kp END           &kp BACKSPACE        &trans
 &trans  &kp NUMBER_6         &kp N7            &kp N8             &kp N9         &kp N0      &trans  &trans  &kp LEFT    &kp DOWN       &kp UP_ARROW   &kp RIGHT         &kp ENTER            &trans
 &trans  &kp INTERNATIONAL_3  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH  &kp KP_DOT  &trans  &trans  &kp DELETE  &kp EQUAL      &kp SEMICOLON  &kp SINGLE_QUOTE  &kp INTERNATIONAL_1  &trans
-&trans  &trans               &trans            &trans             &lt 5 TAB      &trans      &trans  &trans  &kp LEFT    &trans         &trans         &trans            &trans               &trans
-            >;
-        };
-
-        symbol {
-            bindings = <
-&trans  &trans            &trans                &trans            &trans               &trans                               &trans                   &trans        &trans             &trans         &trans            &trans
-&trans  &kp NUMBER_1      &kp NUMBER_2          &kp NUMBER_3      &kp N4               &kp NUMBER_5                         &kp N6                   &kp N7        &kp N8             &kp N9         &kp N0            &trans
-&trans  &kp LEFT_BRACKET  &kp LS(N7)            &kp LS(NUMBER_4)  &kp INTERNATIONAL_1  &kp LS(EQUAL)        &trans  &trans  &kp LS(SINGLE_QUOTE)     &kp MINUS     &kp RIGHT_BRACKET  &kp BACKSLASH  &kp SINGLE_QUOTE  &trans
-&trans  &kp LS(SLASH)     &kp LS(LEFT_BRACKET)  &kp EQUAL         &kp EQUAL            &kp INTERNATIONAL_1  &trans  &trans  &kp LS(INTERNATIONAL_3)  &kp LS(SEMI)  &trans             &trans         &trans            &trans
-&trans  &trans            &trans                &trans            &trans               &kp TAB              &trans  &trans  &trans                   &trans        &trans             &trans         &trans            &trans
+&trans  &trans               &trans            &trans             &lt 4 TAB      &trans      &trans  &trans  &kp LEFT    &trans         &trans         &trans            &trans               &trans
             >;
         };
 
