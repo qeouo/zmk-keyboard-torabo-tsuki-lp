@@ -180,15 +180,5 @@
 &trans  &trans               &trans            &trans             &trans         &trans      &trans  &trans  &kp LEFT    &trans         &trans         &trans            &trans               &trans
             >;
         };
-
-        layer_5 {
-            bindings = <
-&trans  &trans     &trans                &trans     &trans     &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans     &trans                &trans     &trans     &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LC(A)  &mt LEFT_SHIFT LC(S)  &kp TAB    &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LC(Z)  &kp LC(X)             &kp LC(C)  &kp LC(V)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans     &trans                &trans     &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-        };
     };
 };
