@@ -166,7 +166,7 @@
 &trans  &trans   &trans   &trans  &trans                         &trans                                                        &trans        &trans          &trans          &trans          &trans                       &trans
 &trans  &kp F1   &kp F2   &kp F3  &kp F4                         &kp F5                                                        &kp GRAVE     &kp SCROLLLOCK  &kp KP_NUMLOCK  &kp CAPSLOCK    &kp INS                      &trans
 &trans  &kp F6   &kp F7   &kp F8  &kp F9                         &kp F10  &trans                                 &trans        &trans        &mkp LCLK       &mkp MCLK       &mkp RCLK       &mo_exit_aml_on_tap 2 MINUS  &trans
-&trans  &kp F11  &kp F12  &trans  &trans                         &trans   &trans                                 &out OUT_USB  &btchange 0   &btchange 1     &btchange 2     &btchange 3     &btchange 4                  &trans
+&trans  &kp F11  &kp F12  &trans  &trans                         &trans   &to 2                                  &out OUT_USB  &btchange 0   &btchange 1     &btchange 2     &btchange 3     &btchange 4                  &trans
 &trans  &trans   &trans   &trans  &mt_exit_AML_on_tap LCTRL TAB  &trans   &mt_exit_AML_on_tap RIGHT_SHIFT LANG2  &bt BT_CLR    &out OUT_BLE  &trans          &trans          &bt BT_CLR_ALL  &sys_reset                   &trans
             >;
         };
