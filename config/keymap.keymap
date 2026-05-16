@@ -89,36 +89,6 @@
             hold-while-undecided;
         };
 
-        ctrl_e: ctrl_e {
-            compatible = "zmk,behavior-mod-morph";
-            label = "CTRL_E";
-            bindings = <&kp E>, <&kp TAB>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LCTL)>;
-            keep-mods = <(MOD_LCTL)>;
-        };
-
-        zero_pipe: zero_pipe {
-            compatible = "zmk,behavior-mod-morph";
-            label = "ZERO_PIPE";
-            bindings = <&kp N0>, <&kp INT_RO>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_RSFT)>;
-            keep-mods = <(MOD_RSFT)>;
-        };
-
-        esc_tab: esc_tab {
-            compatible = "zmk,behavior-mod-morph";
-            label = "ESC_TAB";
-            bindings = <&kp ESCAPE>, <&kp TAB>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LCTL)>;
-            keep-mods = <(MOD_LCTL)>;
-        };
-
         mo_exit_aml_on_tap: mo_exit_aml_on_tap {
             compatible = "zmk,behavior-hold-tap";
             label = "MO_EXIT_AML_ON_TAP";
@@ -131,11 +101,14 @@
             hold-while-undecided;
         };
 
-        shift_layer2: shift_layer2 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "SHIFT_LAYER2";
+        alttab: alttab {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ALTTAB";
+            bindings = <&kp LEFT_ALT>, <&kp TAB>;
+
             #binding-cells = <0>;
-            bindings = <&mt_exit_AML_on_tap RSHIFT LANGUAGE_2>, <&mo 1>;
+            mods = <(MOD_LCTL)>;
+            keep-mods = <(MOD_LCTL)>;
         };
     };
 
@@ -153,21 +126,21 @@
 
         layer_0 {
             bindings = <
-&kp ESC               &kp N1                 &kp N2        &kp N3        &kp N4                       &kp N5                            &kp N6            &kp N7  &kp N8     &kp N9   &kp N0     &kp BSPC
-&esc_tab              &kp Q                  &kp W         &kp E         &kp R                        &kp T                             &kp Y             &kp U   &kp I      &kp O    &kp P      &kp MINUS
-&mt LEFT_CONTROL TAB  &kp A                  &kp S         &kp D         &kp F                        &kp G      &mkp LCLK  &mkp RCLK   &kp H             &kp J   &kp K      &kp L    &kp MINUS  &kp SINGLE_QUOTE
-&kp LSHFT             &kp Z                  &kp X         &kp C         &kp V                        &kp B      &mo 1      &kp F11     &kp N             &kp M   &kp COMMA  &kp DOT  &kp SLASH  &kp INTERNATIONAL_1
-&mo 2                 &mt LEFT_SHIFT ESCAPE  &kp LEFT_GUI  &kp LEFT_ALT  &mt LEFT_CONTROL LANGUAGE_2  &kp SPACE  &lt 1 TAB  &kp RSHIFT  &lt 2 LANGUAGE_1  &none   &none      &trans   &trans     &kp BACKSLASH
+&kp ESC               &kp N1                                 &kp N2        &kp N3   &kp N4                                &kp N5                                              &kp N6            &kp N7  &kp N8     &kp N9   &kp N0     &kp BSPC
+&none                 &kp Q                                  &kp W         &kp E    &kp R                                 &kp T                                               &kp Y             &kp U   &kp I      &kp O    &kp P      &kp MINUS
+&mt LEFT_CONTROL TAB  &kp A                                  &kp S         &kp D    &kp F                                 &kp G      &mkp LCLK                    &mkp RCLK   &kp H             &kp J   &kp K      &kp L    &kp MINUS  &kp SINGLE_QUOTE
+&kp LSHFT             &kp Z                                  &kp X         &kp C    &kp V                                 &kp B      &mo 1                        &kp F11     &kp N             &kp M   &kp COMMA  &kp DOT  &kp SLASH  &kp INTERNATIONAL_1
+&mo 2                 &mt_exit_AML_on_tap LEFT_SHIFT ESCAPE  &kp LEFT_GUI  &alttab  &mt_exit_AML_on_tap LCTRL LANGUAGE_2  &kp SPACE  &mo_exit_aml_on_tap 1 LANG2  &kp RSHIFT  &lt 2 LANGUAGE_1  &none   &none      &trans   &trans     &kp BACKSLASH
             >;
         };
 
         num_mouse {
             bindings = <
-&trans  &trans                                 &trans            &trans             &trans                                &trans                                         &trans      &trans        &trans          &trans            &trans               &trans
-&trans  &kp NUMBER_1                           &kp NUMBER_2      &kp NUMBER_3       &kp NUMBER_4                          &kp N5                                         &kp GRAVE   &kp CAPSLOCK  &kp KP_NUMLOCK  &kp SCROLLLOCK    &kp BACKSPACE        &trans
-&trans  &kp NUMBER_6                           &kp N7            &kp N8             &kp N9                                &kp N0      &trans                     &trans  &trans      &mkp LCLK     &mkp MCLK       &mkp RCLK         &mo 2                &trans
-&trans  &kp INTERNATIONAL_3                    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH                         &kp KP_DOT  &sys_reset                 &trans  &kp DELETE  &kp EQUAL     &kp SEMICOLON   &kp SINGLE_QUOTE  &kp INTERNATIONAL_1  &trans
-&trans  &mt_exit_AML_on_tap ESCAPE LEFT_SHIFT  &trans            &trans             &mt_exit_AML_on_tap LCTRL LANGUAGE_2  &trans      &mo_exit_aml_on_tap 1 TAB  &trans  &trans      &trans        &trans          &trans            &trans               &trans
+&trans  &trans               &trans            &trans             &trans         &trans                          &trans      &trans        &trans          &trans            &trans               &trans
+&trans  &kp NUMBER_1         &kp NUMBER_2      &kp NUMBER_3       &kp NUMBER_4   &kp N5                          &kp GRAVE   &kp CAPSLOCK  &kp KP_NUMLOCK  &kp SCROLLLOCK    &kp BACKSPACE        &trans
+&trans  &kp NUMBER_6         &kp N7            &kp N8             &kp N9         &kp N0      &trans      &trans  &trans      &mkp LCLK     &mkp MCLK       &mkp RCLK         &mo 2                &trans
+&trans  &kp INTERNATIONAL_3  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH  &kp KP_DOT  &sys_reset  &trans  &kp DELETE  &kp EQUAL     &kp SEMICOLON   &kp SINGLE_QUOTE  &kp INTERNATIONAL_1  &trans
+&trans  &trans               &trans            &trans             &trans         &trans      &trans      &trans  &trans      &trans        &trans          &trans            &trans               &trans
             >;
         };
 
