@@ -144,7 +144,7 @@
 
         aaaaa {
             bindings = <&none>;
-            key-positions = <58 33 34 35 36 54 56 55>;
+            key-positions = <33 34 35 36 54 56 55 53>;
         };
     };
 
@@ -163,11 +163,11 @@
 
         num_mouse {
             bindings = <
-&trans  &trans               &trans            &trans             &trans                                &trans                                         &trans      &trans        &trans          &trans            &trans               &trans
-&trans  &kp NUMBER_1         &kp NUMBER_2      &kp NUMBER_3       &kp NUMBER_4                          &kp N5                                         &kp GRAVE   &kp CAPSLOCK  &kp KP_NUMLOCK  &kp SCROLLLOCK    &kp BACKSPACE        &trans
-&trans  &kp NUMBER_6         &kp N7            &kp N8             &kp N9                                &kp N0      &trans                     &trans  &trans      &mkp LCLK     &mkp MCLK       &mkp RCLK         &mo 2                &trans
-&trans  &kp INTERNATIONAL_3  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH                         &kp KP_DOT  &sys_reset                 &trans  &kp DELETE  &kp EQUAL     &kp SEMICOLON   &kp SINGLE_QUOTE  &kp INTERNATIONAL_1  &trans
-&trans  &trans               &trans            &trans             &mt_exit_AML_on_tap LCTRL LANGUAGE_2  &trans      &mo_exit_aml_on_tap 1 TAB  &trans  &trans      &trans        &trans          &trans            &trans               &trans
+&trans  &trans                                 &trans            &trans             &trans                                &trans                                         &trans      &trans        &trans          &trans            &trans               &trans
+&trans  &kp NUMBER_1                           &kp NUMBER_2      &kp NUMBER_3       &kp NUMBER_4                          &kp N5                                         &kp GRAVE   &kp CAPSLOCK  &kp KP_NUMLOCK  &kp SCROLLLOCK    &kp BACKSPACE        &trans
+&trans  &kp NUMBER_6                           &kp N7            &kp N8             &kp N9                                &kp N0      &trans                     &trans  &trans      &mkp LCLK     &mkp MCLK       &mkp RCLK         &mo 2                &trans
+&trans  &kp INTERNATIONAL_3                    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH                         &kp KP_DOT  &sys_reset                 &trans  &kp DELETE  &kp EQUAL     &kp SEMICOLON   &kp SINGLE_QUOTE  &kp INTERNATIONAL_1  &trans
+&trans  &mt_exit_AML_on_tap ESCAPE LEFT_SHIFT  &trans            &trans             &mt_exit_AML_on_tap LCTRL LANGUAGE_2  &trans      &mo_exit_aml_on_tap 1 TAB  &trans  &trans      &trans        &trans          &trans            &trans               &trans
             >;
         };
 
