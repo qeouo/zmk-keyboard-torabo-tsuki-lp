@@ -85,7 +85,6 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             flavor = "hold-preferred";
-            quick-tap-ms = <200>;
             hold-while-undecided;
         };
 
@@ -97,7 +96,6 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             flavor = "hold-preferred";
-            quick-tap-ms = <200>;
             hold-while-undecided;
         };
 
@@ -116,15 +114,16 @@
             label = "SHIFTLAYER";
             #binding-cells = <0>;
             bindings = <&kp_exit_AML LANGUAGE_2>, <&mo 2>;
+
+            tapping-term-ms = <250>;
         };
 
         tapexit: tapexit {
             compatible = "zmk,behavior-hold-tap";
             label = "TAPEXIT";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             flavor = "hold-preferred";
-            quick-tap-ms = <200>;
             hold-while-undecided;
             bindings = <&kp>, <&shiftlayer>;
         };
