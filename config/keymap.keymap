@@ -133,31 +133,31 @@
 
         layer_0 {
             bindings = <
-&kp ESC               &kp N1                                 &kp N2        &kp N3   &kp N4                         &kp N5                              &kp N6            &kp N7  &kp N8     &kp N9   &kp N0     &kp BSPC
-&none                 &kp Q                                  &kp W         &kp E    &kp R                          &kp T                               &kp Y             &kp U   &kp I      &kp O    &kp P      &kp MINUS
-&mt LEFT_CONTROL TAB  &kp A                                  &kp S         &kp D    &kp F                          &kp G      &mkp LCLK    &mkp RCLK   &kp H             &kp J   &kp K      &kp L    &kp MINUS  &kp SINGLE_QUOTE
-&kp LSHFT             &kp Z                                  &kp X         &kp C    &kp V                          &kp B      &mo 1        &kp F11     &kp N             &kp M   &kp COMMA  &kp DOT  &kp SLASH  &kp INTERNATIONAL_1
-&mo 2                 &mt_exit_AML_on_tap LEFT_SHIFT ESCAPE  &kp LEFT_GUI  &alttab  &mt_exit_AML_on_tap LCTRL TAB  &kp SPACE  &shiftlayer  &kp RSHIFT  &lt 2 LANGUAGE_1  &none   &none      &trans   &trans     &kp BACKSLASH
+&kp ESC               &kp N1                 &kp N2        &kp N3        &kp N4                &kp N5                                       &kp N6            &kp N7  &kp N8     &kp N9   &kp N0     &kp BSPC
+&esc_tab              &kp Q                  &kp W         &ctrl_e       &kp R                 &kp T                                        &kp Y             &kp U   &kp I      &kp O    &kp P      &kp MINUS
+&mt LEFT_CONTROL TAB  &kp A                  &kp S         &kp D         &kp F                 &kp G      &mkp LCLK              &mkp RCLK  &kp H             &kp J   &kp K      &kp L    &kp MINUS  &kp SINGLE_QUOTE
+&kp LSHFT             &kp Z                  &kp X         &kp C         &kp V                 &kp B      &mo 2                  &kp F11    &kp N             &kp M   &kp COMMA  &kp DOT  &kp SLASH  &kp INTERNATIONAL_1
+&mo 1                 &mt LEFT_SHIFT ESCAPE  &kp LEFT_GUI  &kp LEFT_ALT  &mt LEFT_CONTROL TAB  &kp SPACE  &mt RSHIFT LANGUAGE_2  &mo 1      &lt 2 LANGUAGE_1  &none   &none      &trans   &trans     &kp BACKSLASH
             >;
         };
 
-        num_mouse {
+        setting {
             bindings = <
-&trans  &trans               &trans            &trans             &trans         &trans                          &trans      &trans        &trans          &trans            &trans               &trans
-&trans  &kp NUMBER_1         &kp NUMBER_2      &kp NUMBER_3       &kp NUMBER_4   &kp N5                          &kp GRAVE   &kp CAPSLOCK  &kp KP_NUMLOCK  &kp SCROLLLOCK    &kp BACKSPACE        &trans
-&trans  &kp NUMBER_6         &kp N7            &kp N8             &kp N9         &kp N0      &trans      &trans  &trans      &mkp LCLK     &mkp MCLK       &mkp RCLK         &mo 2                &trans
-&trans  &kp INTERNATIONAL_3  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH  &kp KP_DOT  &sys_reset  &trans  &kp DELETE  &kp EQUAL     &kp SEMICOLON   &kp SINGLE_QUOTE  &kp INTERNATIONAL_1  &trans
-&trans  &trans               &trans            &trans             &trans         &trans      &trans      &trans  &trans      &trans        &trans          &trans            &trans               &trans
+&trans  &trans   &trans   &trans  &trans                         &trans                                                        &trans        &trans          &trans          &trans          &trans       &trans
+&trans  &kp F1   &kp F2   &kp F3  &kp F4                         &kp F5                                                        &kp GRAVE     &kp SCROLLLOCK  &kp KP_NUMLOCK  &kp CAPSLOCK    &kp INS      &trans
+&trans  &kp F6   &kp F7   &kp F8  &kp F9                         &kp F10  &trans                                 &trans        &trans        &mkp LCLK       &mkp MCLK       &mkp RCLK       &mo 2        &trans
+&trans  &kp F11  &kp F12  &trans  &trans                         &trans   &trans                                 &out OUT_USB  &btchange 0   &btchange 1     &btchange 2     &btchange 3     &btchange 4  &trans
+&trans  &trans   &trans   &trans  &mt_exit_AML_on_tap LCTRL TAB  &trans   &mt_exit_AML_on_tap RIGHT_SHIFT LANG2  &bt BT_CLR    &out OUT_BLE  &trans          &trans          &bt BT_CLR_ALL  &trans       &trans
             >;
         };
 
-        Non-chara {
+        cursor {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                          &trans       &trans         &trans        &trans          &trans         &trans
-&trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                          &kp HOME     &kp PAGE_DOWN  &kp PG_UP     &kp END         &kp BACKSPACE  &trans
-&trans  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &trans   &trans        &kp LEFT     &kp DOWN       &kp UP_ARROW  &kp RIGHT       &kp ENTER      &trans
-&trans  &trans  &trans  &trans  &trans  &kp F11  &kp F12  &out OUT_USB  &btchange 0  &btchange 1    &btchange 2   &btchange 3     &kp DELETE     &trans
-&trans  &trans  &trans  &trans  &trans  &trans   &trans   &bt BT_CLR    &kp LEFT     &trans         &trans        &bt BT_CLR_ALL  &out OUT_BLE   &trans
+&trans  &trans               &trans            &trans             &trans         &trans                          &trans      &trans         &trans         &trans            &trans               &trans
+&trans  &kp NUMBER_1         &kp NUMBER_2      &kp NUMBER_3       &kp NUMBER_4   &kp N5                          &kp HOME    &kp PAGE_DOWN  &kp PAGE_UP    &kp END           &kp BACKSPACE        &trans
+&trans  &kp NUMBER_6         &kp N7            &kp N8             &kp N9         &kp N0      &trans      &trans  &kp LEFT    &kp DOWN       &kp UP_ARROW   &kp RIGHT         &kp ENTER            &trans
+&trans  &kp INTERNATIONAL_3  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH  &kp KP_DOT  &sys_reset  &trans  &kp DELETE  &kp EQUAL      &kp SEMICOLON  &kp SINGLE_QUOTE  &kp INTERNATIONAL_1  &trans
+&trans  &trans               &trans            &trans             &trans         &trans      &trans      &trans  &kp LEFT    &trans         &trans         &trans            &trans               &trans
             >;
         };
     };
