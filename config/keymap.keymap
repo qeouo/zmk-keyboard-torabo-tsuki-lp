@@ -126,6 +126,8 @@
             flavor = "hold-preferred";
             hold-while-undecided;
             bindings = <&kp>, <&shiftlayer>;
+
+            quick-tap-ms = <250>;
         };
     };
 
