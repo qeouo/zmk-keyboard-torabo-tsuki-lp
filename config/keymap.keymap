@@ -113,7 +113,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "SHIFTLAYER";
             #binding-cells = <0>;
-            bindings = <&kp_exit_AML LANGUAGE_2>, <&mo 2>;
+            bindings = <&mt_exit_AML_on_tap RIGHT_SHIFT LANG2>, <&mo 2>;
 
             tapping-term-ms = <250>;
         };
