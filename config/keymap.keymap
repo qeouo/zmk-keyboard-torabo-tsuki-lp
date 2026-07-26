@@ -115,8 +115,8 @@
             bindings = <&kp N0>, <&kp INTERNATIONAL_3>;
 
             #binding-cells = <0>;
-            keep-mods = <(MOD_LSFT)>;
-            mods = <(MOD_LSFT)>;
+            keep-mods = <(MOD_RSFT)>;
+            mods = <(MOD_RSFT)>;
         };
     };
 
